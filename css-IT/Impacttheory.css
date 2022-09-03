@@ -1,0 +1,232 @@
+.body {
+  font: 15px/1.5 Arial, helvetica, sans-serif;
+  border: 0;
+  padding: 0;
+  background-color: white;
+}
+/* Global*/
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.button_1 {
+  height: 30px;
+  background-color: rgb(15, 77, 128);
+  color: white;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.button_2 {
+  height: 30px;
+  background-color: rgb(7, 20, 31);
+  color: white;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.dark {
+  padding: 15px;
+  background-color: rgb(15, 77, 128);
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Header */
+header {
+  background: rgb(15, 77, 128);
+  color: rgb(0, 0, 0);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  min-height: 70px;
+  border-bottom: black 5px solid;
+  font-size: 50px;
+}
+
+header a {
+  color: rgb(0, 0, 0);
+  text-decoration: solid;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+  object-fit: scale-down;
+}
+
+header nav {
+  float: right;
+}
+
+header .current a {
+  color: lightskyblue;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+/*Showcase */
+
+#showcase {
+  min-height: 400px;
+  background: url("../img-IT/Talib-Kweli-Greene_Sit_v01-1024x683.jpg")
+    no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: rgb(15, 77, 128);
+  background-position: center center;
+}
+
+#text h1 {
+  margin: top 20px;
+  text-decoration: solid;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#text p {
+  margin-top: 0;
+  text-decoration: solid;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Newsletter */
+
+#newsletter {
+  padding: 15px;
+  color: black;
+  background-color: skyblue;
+  border-bottom: black 5px solid;
+}
+
+#newsletter h1 {
+  float: left;
+}
+
+#newsletter form {
+  float: right;
+  margin-top: 20px;
+}
+
+#newsletter input {
+  padding: 4px;
+  height: 30px;
+  width: 250px;
+}
+
+/* Boxes */
+
+#boxes {
+  margin-top: 20px;
+  background-color: rgb(15, 77, 128);
+  color: rgb(255, 255, 255);
+  text-decoration: solid;
+  border-bottom: black 5px solid;
+}
+
+#boxes .box {
+  float: left;
+  text-align: center;
+  width: 32%;
+  padding: 10px;
+}
+
+#boxes .box img {
+  width: 420px;
+}
+
+/*Sidebar*/
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/*Main-col*/
+article#main-col {
+  float: left;
+  width: 65%;
+}
+
+/*Services*/
+
+ul#services li {
+  list-style: none;
+  padding: 20px;
+  border: grey solid 1px;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+footer {
+
+  padding: 10px;
+  padding-top: 10px;
+  background-color: whitesmoke;
+  color: rgb(15, 77, 128);
+  text-align: center;
+}
+
+/*Media Queries*/
+@media (max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #showcase h1 {
+    margin: 40px;
+  }
+
+  #newsletter button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"],
+  .quote input,
+  .quote textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
